@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>blog | ek9no's Page</title>
+  <title>✧ ek9no's Page ✧</title>
 
+  <!-- Fast Theme Initialization (Prevents Screen Flash) -->
   <script>
-    document.documentElement.dataset.theme = localStorage.getItem('theme') ||
+    document.documentElement.dataset.theme = localStorage.getItem('theme') || 
       (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
   </script>
 
- <link rel="stylesheet" href="../css/style2.css">
- <link rel="stylesheet" href="../css/blog-extra.css">
- <script src="../js/theme.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style2.css">
+  <script src="js/theme.js"></script>
+
 </head>
 
 <body class="home-page">
@@ -21,11 +28,12 @@
     <header class="hero">
       <div class="site-title">✧ EK9NO'S PAGE ✧</div>
       <nav>
-        <a href="https://ek0no.strangled.net">Home</a>
-        <a href="../about-me/">About</a>
-        <a href="./">blog</a> 
+        <a href="">home</a>
+        <a href="about-me/">About</a>
+        <a href="blog/">Blog</a> 
       </nav>
 
+      <!-- Theme Toggle Button -->
       <button class="theme-toggle" aria-label="Toggle theme">
         <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5" />
@@ -41,35 +49,28 @@
         <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>
-      </button>
+        </button>
+
+        
     </header>
 
     <main>
-      <div class="blog-wrap">
-        <section class="panel">
 
-          <h2>blog</h2>
-          <p class="blog-intro">What I'm learning, my thoughts, and my self-talks.</p>
+    <section class="panel welcome-blurb" id="welcome">
+      <h2>Welcome To My Page</h2>
+      <h3>Hi, I'm ek9no! 👋</h3> 
+      <br>
+      <p>This is my little corner of the internet</p>
+      <p>I'm a self-learner</p>
+      <p>In this website, i would be talking about mainly what i am learning, what my psychology is and generally i really love talking about psychology the most because i have experienced with lots of people and they still struggle on to themselves.</p>
+      <p>And this website is made specifically for myself because i am also struggling with my psychology and there would be a lots of blog posts about myself, my self-talks and more.</p>
+      <p>i will be talking about most of the stuff which people trust those safe things and easy things around the internet but end up trapped. Specially for youtube, privacy, IRL too.</p>
+      <br>
+      <p class="stamp">Want to know more things? you can visit this page: <a href="./about-me/">About Me</a></p>
+    
+    </section>
+    
 
-          <ul class="bloglist">
-            <!--BLOG SECTION -->
-             <li>
-              <a href="../blog/holy-speech-with-ni5arga/"><b>✧ Holy Speech To Ni5arga In Discord</b></a>
-              <span class="date">04-10-2026</span>
-            </li>
-            
-            <li>
-              <a href="../blog/the-worst-thing-in-our-life/"><b>✧ Education "School" System is fucked up! </b></a>
-              <span class="date">03-10-2026</span>
-            </li>
-
-            <li>
-              <a href="../blog/youtube-blog/"><b>✧ Youtube is being soo bad...</b></a>
-              <span class="date">02-10-2026</span>
-            </li> 
-
-        </section>
-      </div>
     </main>
 
     <footer class="pagefoot">
@@ -81,10 +82,11 @@
         <p>© 2026 ek9no (kekobade)</p>
       
     </footer>
+  
+     </div>
 
-    
-  </div>
 
+<!-- Interactive JavaScript -->
   <script>
     const html = document.documentElement;
     const themeToggle = document.querySelector('.theme-toggle');
@@ -94,14 +96,20 @@
       localStorage.setItem('theme', t);
     }
 
-    themeToggle.addEventListener('click', () => {
-      const next = html.dataset.theme === 'light' ? 'dark' : 'light';
-      if (document.startViewTransition) {
-        document.startViewTransition(() => applyTheme(next));
-      } else {
-        applyTheme(next);
-      }
-    });
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const current = html.dataset.theme;
+        const next = current === 'light' ? 'dark' : 'light';
+        
+        if (document.startViewTransition) {
+          document.startViewTransition(() => applyTheme(next));
+        } else {
+          applyTheme(next);
+        }
+      });
+    }
   </script>
+  
+
 </body>
 </html>
