@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- this is my first ever website but no it isn't. at first i made a website which was only specially for book marks. backup of my orginal bookmark is in "https//:kekobade.github.io/keko/".
+ but this started from oct 2 2026 (now it's 10 oct btw) after k3njie left from discord because of his constant mentle pressure. it still made a mark for making a website which is btw the backup thing, the first website.
+ if your here, i think you have come for taking inspiration. even i too take inspirations from so many websites, again you can check out my backup.
+ this website is vibe coded and it's not great for vibe-coding because it's really a worst thing to do at the start but atleast i wanted to make a mark inside my heart for making a well hearted yk website but still it isn't becausede it's vibe-coded and it is not made by me or smo
+ but i still manage to edit the css/html by myself and the work on javascript isn't really doing for me so i vibe coded it. it's just a dark/light thing.
+ 
+ thank you for reading.
+
+ keko
+
+    -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>✧ ek9no's Page ✧</title>
 
-  <!-- Fast Theme Initialization (Prevents Screen Flash) -->
   <script>
     document.documentElement.dataset.theme = localStorage.getItem('theme') || 
       (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
@@ -16,22 +26,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
 
-  <!-- Stylesheets -->
+
   <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/decorations.css">
   <script src="js/theme.js"></script>
 
 </head>
 
 <body class="home-page">
   <div class="page">
+  <header class="hero">
 
-    <header class="hero">
+    <div id="enter-screen">
+  <p class="enter-title">EK9NO'S PAGE</p>
+  <p class="enter-hint">[ click anywhere to enter ]</p>
+  <p>For more Interactivity, Switch to Linux Desktop (hehe)
+    </div>
+
+  <img src="/ek9no/img/stickers/ralsei.png" class="pic1" alt="ralsei">
+  <img src="/ek9no/img/stickers/cat.png" class="pic2" alt="cat">
+  <img src="/ek9no/img/stickers/cirno.png" class="pic" id="pic" alt="cirno">
+  <audio id="sfx" src="/ek9no/img/stickers/baka_fumo.mp3" preload="auto"></audio>
+
+<script>
+  document.getElementById('pic').addEventListener('click', () => {
+    const sfx = document.getElementById('sfx');
+    sfx.currentTime = 0;
+    sfx.play();
+  });
+</script>
+
       <div class="site-title">✧ EK9NO'S PAGE ✧</div>
-      <nav>
-        <a href="">home</a>
-        <a href="about-me/">About</a>
-        <a href="blog/">blog</a> 
-      </nav>
+        <div class="site-shell">
+       <header class="site-header">
+        <nav class="site-nav" id="nav-btn" aria-label="Main navigation">
+      <button onclick="location.href='./'">HOME</button>
+      <button onclick="location.href='./about-me/'">ABOUT</button>
+      <button onclick="location.href='./projects/'">PROJECTS</button>
+      <button onclick="location.href='./blog/'">BLOG</button>
+      <button onclick="location.href='./Arts/'">ARTS</button>
+        </nav>
+      </header>
+      </div>
 
       <!-- Theme Toggle Button -->
       <button class="theme-toggle" aria-label="Toggle theme">
@@ -57,19 +93,44 @@
     <main>
 
     <section class="panel welcome-blurb" id="welcome">
-      <h2>Welcome To My Page</h2>
-      <h3>Hi, I'm ek9no! 👋</h3> 
+      <div class="picture-frame">
+      <img src="img/profile.png" alt="Kekobade (ek9no)">
+      </div>
+
+      <h2>Welcome To My Website</h2>
+      <h3>Ello, This is ek9no's Playground </h3>
       <br>
-      <p>This is my little corner of the internet</p>
-      <p>I'm a self-learner And An Artist, Or i might be a psychologists specially for myself. i have been searching my potential from inside and outside and it really is like genuelly, a psychological su#ide but it needs to be mastered for myself.</p>
-      <p>And this website is made specifically for myself because i am struggling with my psychology and there would be a lots of blog posts about myself (not that much but i will be making it in text form and then upload it after a month, because it should be helpful to me and others which idk), my self-talks and more.</p>
+      <p>This is my little corner of the internet where i share whatever i
+         like and My Projects I mostly do on Making New Webpage.</p>
+      <p>I'm a self-learner And An Artist, Or i might be a psychologists specially for myself.</p>
+
+
+      <div class="doodle-row">
+        <svg class="doodle" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="50%" y="55%" text-anchor="middle" font-size="36" fill="currentColor" opacity="0.5">✦</text>
+        </svg>
+        <svg class="doodle" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="50%" y="55%" text-anchor="middle" font-size="36" fill="currentColor" opacity="0.5">♡</text>
+        </svg>
+        <svg class="doodle" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="50%" y="55%" text-anchor="middle" font-size="36" fill="currentColor" opacity="0.5">☆</text>
+        </svg>
+        <svg class="doodle" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="50%" y="55%" text-anchor="middle" font-size="36" fill="currentColor" opacity="0.5">✧</text>
+        </svg>
+      </div>
       <br>
-      <p class="stamp">Want to know more things I love? you can visit this page: <a href="https://kekopage.strangled.net/"><u>Kekopage</u></a></p>
+      <br>
+      <br>
+      <p class="stamp">Want to know more things I love? you can visit this page: <a href="https://kekobade.github.io/keko/"><u>Kekopage</u></a></p>
     
     </section>
-    
-
     </main>
+
+    <svg class="sticker sticker-1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><text x="50%" y="55%" text-anchor="middle" font-size="30" fill="currentColor" opacity="0.4">⟡</text></svg>
+    <svg class="sticker sticker-2" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><text x="50%" y="55%" text-anchor="middle" font-size="28" fill="currentColor" opacity="0.4">✦</text></svg>
+    <svg class="sticker sticker-3" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><text x="50%" y="55%" text-anchor="middle" font-size="30" fill="currentColor" opacity="0.4">♡</text></svg>
+    <svg class="sticker sticker-4" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><text x="50%" y="55%" text-anchor="middle" font-size="28" fill="currentColor" opacity="0.4">☆</text></svg>
 
     <footer class="pagefoot">
       <a href="https://github.com/kekobade" target="_blank" rel="noopener noreferrer">github</a>
@@ -84,8 +145,20 @@
      </div>
 
 
+<!-- click click (baka desu ka?) -->
+<script>
+     const enterScreen = document.getElementById('enter-screen');
+
+document.body.classList.add('locked');
+
+enterScreen.addEventListener('click', () => {
+  enterScreen.classList.add('hide');
+  document.body.classList.remove('locked');
+});
+</script>
+
 <!-- Interactive JavaScript -->
-  <script>
+<script>
     const html = document.documentElement;
     const themeToggle = document.querySelector('.theme-toggle');
 
@@ -106,8 +179,7 @@
         }
       });
     }
-  </script>
+</script>
   
-
 </body>
 </html>

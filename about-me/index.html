@@ -7,7 +7,7 @@
   <meta name="description" content="thoughts about web development &amp; life">
   <meta name="author" content="ek9no">
 
-  <!-- Theme init (runs before paint to avoid a flash) -->
+  <!-- Theme (dark/light) -->
   <script>
     document.documentElement.dataset.theme = localStorage.getItem('theme') ||
       (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
@@ -15,18 +15,37 @@
 
   <link rel="stylesheet" href="../css/style2.css">
   <link rel="stylesheet" href="../css/blog-extra.css">
+  <link rel="stylesheet" href="../css/decorations.css">
 </head>
 
-<body class="home-page"> 
+<body class="home-page">
   <div class="page">
 
+  <img src="/ek9no/img/stickers/cirno.png" class="fumo-about" id="fumo-about" alt="cirno">
+  <audio id="sfx1" src="/ek9no/img/stickers/baka_fumo.mp3" preload="auto"></audio>
+
+<script>
+  document.getElementById('fumo-about').addEventListener('click', () => {
+    const sfx = document.getElementById('sfx1');
+    sfx.currentTime = 0;
+    sfx.play();
+  });
+</script>
+
     <header class="hero">
+
       <div class="site-title">✧ EK9NO'S PAGE ✧</div>
-      <nav>
-        <a href="https://kekobade.github.io">Home</a>
-        <a href="../about-me/">About</a>
-        <a href="../blog/">blog</a>
+        <div class="site-shell">
+       <header class="site-header">
+        <nav class="site-nav" id="nav-btn" aria-label="Main navigation">
+      <button onclick="location.href='../'">HOME</button>
+      <button onclick="location.href=''">ABOUT</button>
+      <button onclick="location.href='../projects/'">PROJECTS</button>
+      <button onclick="location.href='../blog/'">BLOG</button>
+      <button onclick="location.href='../Arts/'">ARTS</button>
       </nav>
+      </header>
+      </div>
 
       <button class="theme-toggle" aria-label="Toggle theme">
         <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -49,16 +68,17 @@
           <p class="post-date">2026-10-02</p>
 
           <div class="post-content">
-            <p>Hi there! I'm ek9no, I'm a self-learner And An Artist, Or i might be a psychologists specially for myself. i have been searching my potential from inside and outside and it really is like genuelly, a psychological su#ide but it needs to be mastered for myself.</p>
+            <p>Hi there! I'm ek9no, I'm a self-learner And An Artist, Or i might be a psychologists specially for myself. i am really into the rabbit hole of the internet lately so sometimes i am bein a type of a stereotype but i'm keepin myself alone and have a tea party of myself, hehe.</p>
             <br>
             <h3>Things I love to share</h3>
-            <p>I love to share my thoughts on psychology, personal development, and the intersection of technology and human behavior, Arts, Diary, and More...</p>
+            <p>I love to share my thoughts on psychology, personal development, and the intersection of technology and human behavior, Arts, Diary, more about technology</p>
             <br>
             <h3>My Goals</h3>
-            <p>I Don't Set Goals And also I don't even share to anyone because i have my own companion to talk and make decisions and idk i don't really like to talk about myself (i am here to just share my opinions on whatever topic it hits and idc who wants to blame me or whatever)</p>
+            <p>I Wanted to be a Programmar for everything i wanted to do. i want to understand the compute of every technology. like i'm a 16 year old (which i don't as i am 16 or smt) but i feel like i'm a 20 year old</p>
             <br>
 
-            <p>Thanks for reading.</p>
+            <p>Thank You for reading.</p>
+            </div>
           </div>
         </article>
       </div>
@@ -67,7 +87,7 @@
     <footer class="pagefoot">
       <a href="https://github.com/kekobade" target="_blank" rel="noopener noreferrer">github</a>
       &nbsp;·&nbsp;
-      <a href="https://x.com/kekowashere" target="_blank" rel="noopener noreferrer">x</a>
+      <a href="https://x.com/kekowashere" target="_blank" rel="noopener noreferrer">X</a>
         <br>
         <br>
         <p>© 2026 ek9no (kekobade)</p>

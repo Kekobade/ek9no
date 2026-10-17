@@ -1,4 +1,4 @@
-/* Blog pages: uses the same tokens as style2.css, so colors always match */
+/* Blog pages */
 
 .blog-wrap { width: 100%; max-width: 920px; }
 
@@ -40,3 +40,4 @@ ul.bloglist a:hover { color: var(--link-hover); }
 }
 .post-content img { max-width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 6px; margin: 18px 0; }
 .post-content hr { border: none; border-top: 1px dashed var(--panel-border); margin: 28px 0; }
+
